@@ -1,0 +1,134 @@
+#+TITLE: Magit reference card
+
+#+STARTUP: hidestars indent
+
+
+* Section Movement
+
+| Key | Description              |
+|-----+--------------------------|
+| =p= | previous section         |
+| =n= | next section             |
+| =P= | previous sibling section |
+| =N= | next sibling section     |
+| =^= | parent section           |
+
+* Section Visibility
+
+| Key     | Description                                |
+|---------+--------------------------------------------|
+| =TAB=   | toggle visibility of current section       |
+| =C-TAB= | cycle visibility of section and children   |
+| =M-TAB= | cycle visibility of diff-related sections  |
+| =S-TAB= | cycle visibility of all sections in buffer |
+
+* Staging
+
+| Key                      | Description                   |
+|--------------------------+-------------------------------|
+| =s=                      | stage change at point         |
+| =u=                      | unstage change at point       |
+| =S=                      | stage all changes in worktree |
+| =U=                      | reset index to some commit    |
+| =M-x magit-unstage-all=  | remove all changes            |
+| =M-x magit-stage-file=   | stage current file            |
+| =M-x magit-unstage-file= | unstage current file          |
+
+
+* Status / Diff / Log buffer
+
+| Key       | Description                              |
+|-----------+------------------------------------------|
+| =SPC=     | update commit/diff buffer or scroll up   |
+| =DEL=     | update commit/diff buffer or scroll down |
+| =h=       | show dispatch popup                      |
+| =g=       | refresh                                  |
+| =G=       | refresh all                              |
+| =q=       | bury current buffer                      |
+| =L=       | toggle margin                            |
+| =x=       | soft reset (hard when argument is given) |
+| =y=       | show references (tags and branches)      |
+| =Y=       | cherry                                   |
+| =C-c C-b= | move backward in buffer’s history        |
+| =C-c C-f= | move forward in buffer’s history         |
+| =e=       | ediff DWIM                               |
+| =i=       | gitignore                                |
+| =I=       | gitignore locally                        |
+
+
+* Popups
+
+| Key | Description    |
+|-----+----------------|
+| =!= | running git    |
+| =b= | branching      |
+| =B= | bisecting      |
+| =c= | committing     |
+| =d= | diffing        |
+| =E= | ediff          |
+| =f= | fetching       |
+| =F= | pulling        |
+| =l= | logging        |
+| =m= | merging        |
+| =M= | remoting       |
+| =P= | pushing        |
+| =o= | submoduling    |
+| =r= | rebasing       |
+| =w= | apply patches  |
+| =W= | format patches |
+| =t= | tagging        |
+| =z= | stashing       |
+
+
+* References Buffer
+
+| Key | Description                            |
+|-----+----------------------------------------|
+| =y= | compare references with HEAD           |
+| =c= | compare references with current branch |
+| =o= | compare references with other branch   |
+
+
+
+* Diff Buffer
+
+| Key     | Description                                   |
+|---------+-----------------------------------------------|
+| =RET=   | visit file (or blob) at appropriate position  |
+| =C-RET= | visit file at appropriate position            |
+| =−=     | decrease context of diff hunks                |
+| =+=     | increase context of diff hunks                |
+| =0=     | reset context of diff hunks to default height |
+| =j=     | jump to diff stat ↔ diff section              |
+
+
+* Blaming
+
+| Key               | Description                              |
+|-------------------+------------------------------------------|
+| =M-x magit-blame= | display edit history of file             |
+| =RET=             | show the commit at point                 |
+| =SPC=             | update commit/diff buffer or scroll up   |
+| =DEL=             | update commit/diff buffer or scroll down |
+| =n=               | move to the next chunk                   |
+| =N=               | move to the next chunk (same commit)     |
+| =p=               | move to the previous chunk               |
+| =P=               | move to the previous chunk (same commit) |
+| =q=               | turn off magit blame mode                |
+| =t=               | show or hide blame chunk headings        |
+
+
+* Log Buffer
+
+| Key       | Description                          |
+|-----------+--------------------------------------|
+| =+=       | show more history                    |
+| =C-c C-c= | select commit at point and act on it |
+| =C-c C-k= | abort selecting commit               |
+
+* Repository Setup
+
+| Key               | Description                 |
+|-------------------+-----------------------------|
+| =M-x magit-init=  | initialize a Git repository |
+| =M-x magit-clone= | clone a repository          |
