@@ -77,7 +77,7 @@ If Emacs is still searching, =C-g= cancels only the part not matched.
 | line                            | =C-p=      | =C-n=     |
 | go to line beginning (or end)   | =C-a=      | =C-e=     |
 | sentence                        | =M-a=      | =M-e=     |
-| paragraph                       | =M-\{=     | =M-\=}    |
+| paragraph                       | =M-{=      | =M-}=     |
 | page                            | =C-x [=    | =C-x ]=   |
 | sexp                            | =C-M-b=    | =C-M-f=   |
 | function                        | =C-M-a=    | =C-M-e=   |
@@ -165,7 +165,7 @@ frame instead of a window.
 * Formatting
 
 | indent current *line* (mode-dependent) | =TAB=     |
-| indent *region* (mode-dependent)       | =C-M-\\=  |
+| indent *region* (mode-dependent)       | =C-M-\=   |
 | indent *sexp* (mode-dependent)         | =C-M-q=   |
 | indent region rigidly /arg/ columns    | =C-x TAB= |
 | indent for comment                     | =M-;=     |
@@ -174,7 +174,7 @@ frame instead of a window.
 | move rest of line vertically down        | =C-M-o=   |
 | delete blank lines around point          | =C-x C-o= |
 | join line with previous (with arg, next) | =M-^=     |
-| delete all white space around point      | =M-\\=    |
+| delete all white space around point      | =M-\=     |
 | put exactly one space at point           | =M-SPC=   |
 
 | fill paragraph                   | =M-q=   |
@@ -222,7 +222,7 @@ minibuffer.  Type =F10= to activate menu bar items on text terminals.
 
 * Spelling Check
 
-| check spelling of current word        | =M-\$=              |
+| check spelling of current word        | =M-$=               |
 | check spelling of all words in region | =M-x ispell-region= |
 | check spelling of entire buffer       | =M-x ispell-buffer= |
 | toggle on-the-fly spell checking      | =M-x flyspell-mode= |
@@ -379,16 +379,16 @@ Making global key bindings in Emacs Lisp (example):
 
 #+begin_src emacs-lisp
   (global-set-key (kbd "C-c g") 'search-forward)
-  (global-set-key (kbd "M-\#") 'query-replace-regexp)
+  (global-set-key (kbd "M-#") 'query-replace-regexp)
 #+end_src
 
 * Writing Commands
 
 #+begin_src emacs-lisp
-  (defun \<command-name> (\<args>)
-    "\<documentation>"
-    (interactive "\<template>")
-    \<body>)
+  (defun <command-name> (<args>)
+    "<documentation>"
+    (interactive "<template>")
+    <body>)
 #+end_src
 
 An example:
