@@ -299,7 +299,7 @@ minibuffer.  Type =F10= to activate menu bar items on text terminals.
 | *class of characters*       | *match these* | *match others* |
 | explicit set                | =[ ... ]=     | =[^ ... ]=     |
 | word-syntax character       | =\w=          | =\W=           |
-| character with syntax /c/   | =\s=/c/       | =\S=/c/        |
+| character with syntax /c/   | =\s=/c/       | =\⁣S=/c/        |
 | character with category /c/ | =\c=/c/       | =\C=/c/        |
 
 
