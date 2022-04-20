@@ -1,5 +1,5 @@
 #+TITLE: GNU Emacs 28 Reference Card
-#+STARTUP: indent hidestars showall
+#+STARTUP: indent hidestars showall entitiespretty
 
 # Regular expressions:
 # Section: \\section{\([^}]+\)} → * \1
@@ -238,11 +238,11 @@ minibuffer.  Type =F10= to activate menu bar items on text terminals.
 
 * Shells
 
-| execute a shell command                | =M-!=         |
-| execute a shell command asynchronously | =M-&=         |
-| run a shell command on the region      | =M-\vert=     |
-| filter region through a shell command  | =C-u M-\vert= |
-| start a shell in window =*shell*=      | =M-x shell=   |
+| execute a shell command                | =M-!=       |
+| execute a shell command asynchronously | =M-&=       |
+| run a shell command on the region      | =M-\vert=       |
+| filter region through a shell command  | =C-u M-\vert=   |
+| start a shell in window =*shell*=      | =M-x shell= |
 
 * Rectangles
 
@@ -278,7 +278,7 @@ minibuffer.  Type =F10= to activate menu bar items on text terminals.
 | zero or one repeat                             | =?=              |
 | quote special characters                       | =\=              |
 | quote regular expression special character /c/ | =\=/c/           |
-| alternative ("or")                             | =\\vert=         |
+| alternative ("or")                             | =\\vert=             |
 | grouping                                       | =\( ... \)=      |
 | shy grouping                                   | =\(?: ... \)=    |
 | explicit numbered grouping                     | =\(?NUM: ... \)= |
